@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorAccent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="23 Items"
+                android:textColor="#fff"
+                android:textSize="24sp"
+                android:layout_centerVertical="true"
+                android:paddingStart="@dimen/activity_horizontal_margin"/>
+            <ImageButton
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@drawable/plus"
+                android:layout_alignParentEnd="true"
+                android:tint="#fff"
+                android:background="?android:attr/selectableItemBackgroundBorderless"
+                android:id="@+id/add_item"
+                android:layout_marginEnd="@dimen/activity_vertical_margin"
+                android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/item_recycler_view"/>
+</LinearLayout>
